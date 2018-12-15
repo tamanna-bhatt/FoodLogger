@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dhaivat.foodlogger">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.dhaivat.foodlogger.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.dhaivat.foodlogger.ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.SignupActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.dhaivat.foodlogger.AddMealsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.dhaivat.foodlogger.AllMealsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.dhaivat.foodlogger.AddcategoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.DeleteMealsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.dhaivat.foodlogger.AllMenusActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.UpdateMealsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.AllMealNameActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.UpdateProfileActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.ShareActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.DeleteCategoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.dhaivat.foodlogger.UpdatecategoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.dhaivat.foodlogger"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+
+    </application>
+
+</manifest>

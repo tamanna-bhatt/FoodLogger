@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+android:orientation="vertical"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+
+                  android:padding="12dp"
+                  android:layout_centerInParent="true"
+    >
+
+        <customfonts.Regular_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUJARAT FOOD"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+        />
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:padding="12dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOOD "
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGGER"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="12dp"
+        >
+
+
+
+            <customfonts.Regular_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provide your Mobile to Login/Create Account on Gujaratfood."
+                android:textColor="@color/medium_text"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:visibility="gone"
+
+            />
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                android:layout_marginTop="48dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                >
+
+                    <customfonts.Regular_edittext
+                        android:id="@+id/etCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:inputType="number"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/light_text"
+                        android:textSize="14dp"
+
+                    />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            >
+
+                <customfonts.Regular_edittext
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/light_text"
+                    android:textSize="14dp"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+            >
+
+                <customfonts.Regular_edittext
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/light_text"
+                    android:textSize="14dp"
+
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <customfonts.Regular_Textview
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@drawable/round_button_orange"
+                 android:gravity="center"
+                                          android:padding="14dp"
+                                          android:text="LOGIN"
+                                          android:textColor="@color/white"
+                                          android:layout_marginTop="24dp"
+                                          android:textSize="14dp"
+            />
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:textColor="@color/medium_text"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:padding="12dp"
+                android:visibility="gone"
+
+                />
+
+
+
+            <customfonts.Medium_Textview
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User? Create Account"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

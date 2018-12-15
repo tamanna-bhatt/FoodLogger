@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layout_centerInParent="true">
+        
+        <LinearLayout
+            android:id="@+id/gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_button"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gmail"/>
+
+    <customfonts.Regular_Textview
+        android:id="@+id/btnAddMeals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GMAIL"
+
+android:layout_marginLeft="16dp"        android:textColor="@color/red"
+        android:textSize="15dp"
+
+       />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_button"
+            android:padding="16dp"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/whatsapp"/>
+
+            <customfonts.Regular_Textview
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WHATSAPP"
+
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/green"
+                android:textSize="15dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_button"
+            android:padding="16dp"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/drive"/>
+
+            <customfonts.Regular_Textview
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOOGLE DRIVE"
+
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/yellow"
+                android:textSize="15dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_button"
+            android:padding="16dp"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                />
+
+            <customfonts.Regular_Textview
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIEW MORE"
+
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+ >
+
+
+    <LinearLayout
+        android:id="@+id/llDateAndtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_grey"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        >
+
+
+        <customfonts.TextView_Regular
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/red"
+            android:text="hjkjlkjlj"
+            android:padding="12dp"
+
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawablePadding="6dp"
+
+            android:drawableTint="@color/red"
+          />
+
+
+        <customfonts.Medium_Textview
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/green"
+            android:text="hjkjlkjlj"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp">
+
+
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+  >
+
+
+    <customfonts.Regular_Textview
+        android:id="@+id/tvMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="@color/text_color"
+        android:text="sfsfsfasff"
+      />
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="hjkjlkjlj"
+                android:layout_marginTop="12dp"/>
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvProtien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="hjkjlkjlj"
+                android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvCarbohydrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="sfsfsfasff"/>
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="hjkjlkjlj"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_delete"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/light_grey"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp">
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingLeft="42dp"
+            android:paddingRight="42dp"
+
+            android:paddingBottom="32dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+           >
+
+            <customfonts.Medium_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOOD "
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+            <customfonts.Medium_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" LOGGER"
+                android:textSize="22dp"
+
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnAddMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_button_green"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tray"
+                android:tint="@color/white"
+                android:layout_marginLeft="8dp"/>
+
+    <customfonts.TextView_Regular
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Meal"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="12dp"
+       />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round_button_black"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/category"
+            android:tint="@color/white"
+            android:layout_marginLeft="8dp"/>
+
+
+        <customfonts.Regular_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Add Category"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+          />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnViewLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round_button_red"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/viewlist"
+            android:tint="@color/white"
+            android:layout_marginLeft="8dp"/>
+
+    <customfonts.Regular_Textview
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Log"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="12dp"
+      />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnEditViewLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round_button_blue"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/backspace"
+            android:tint="@color/white"
+            android:layout_marginLeft="8dp"/>
+
+        <customfonts.Regular_Textview
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search and Delete View Log"
+        android:layout_marginLeft="12dp"
+            android:textSize="15dp"
+        android:textColor="@color/white"
+       />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round_button_yellow"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/share"
+            android:tint="@color/white"
+            android:layout_marginLeft="8dp"/>
+
+        <customfonts.Regular_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_marginLeft="12dp"
+            android:textSize="15dp"
+        android:textColor="@color/white"
+ />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round_button_share"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logout"
+            android:tint="@color/white"
+            android:layout_marginLeft="8dp"/>
+
+    <customfonts.Regular_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="@color/tab_select_txt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

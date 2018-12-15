@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/activity_login"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+
+>
+
+
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+
+
+            <customfonts.Regular_Textview
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginLeft="8dp"
+                                          android:text="Meal Name : "
+                                          android:textColor="@color/text_color"
+                                          android:textSize="15dp"/>
+            
+            <AutoCompleteTextView
+                android:id="@+id/etMealName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+
+                <customfonts.Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Category : "
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"/>
+
+                <Spinner
+                    android:id="@+id/spCategory"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+
+                <customfonts.Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Carbohydrate : "
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"/>
+
+                <customfonts.Edittext_Regular
+                    android:id="@+id/etcarbohydrate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+
+                <customfonts.Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Protien : "
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"/>
+
+                <customfonts.Edittext_Regular
+                    android:id="@+id/etProtien"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+
+                <customfonts.Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Fat : "
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"/>
+
+                <customfonts.Edittext_Regular
+                    android:id="@+id/etFat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+
+                <customfonts.Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Calories : "
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"/>
+
+                <customfonts.Edittext_Regular
+                    android:id="@+id/etcalories"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <customfonts.Regular_Textview
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginTop="28dp"
+                                          android:background="@drawable/round_button_orange"
+                                          android:gravity="center"
+                                          android:padding="14dp"
+                                          android:text="ADD MEAL"
+                                          android:textColor="@color/white"
+                                          android:textSize="14dp"
+            />
+
+
+
+            <customfonts.Regular_Textview
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="SHOW ALL MEAL"
+                android:layout_marginTop="22dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
